@@ -18,6 +18,8 @@
 		A807C659298A174A003AD93D /* LiveActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A807C658298A174A003AD93D /* LiveActivityView.swift */; };
 		A807C65A298A17F4003AD93D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED67D6252917E3520097D139 /* Assets.xcassets */; };
 		A807C65B298A18E9003AD93D /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED67D6352917E3E40097D139 /* Image+Ext.swift */; };
+		A81A341E298CD8A900D36B64 /* GameAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81A341D298CD8A900D36B64 /* GameAttributes.swift */; };
+		A81A341F298CD8A900D36B64 /* GameAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81A341D298CD8A900D36B64 /* GameAttributes.swift */; };
 		ED67D6222917E3510097D139 /* BasketballSimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED67D6212917E3510097D139 /* BasketballSimApp.swift */; };
 		ED67D6262917E3520097D139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED67D6252917E3520097D139 /* Assets.xcassets */; };
 		ED67D6292917E3520097D139 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED67D6282917E3520097D139 /* Preview Assets.xcassets */; };
@@ -64,6 +66,7 @@
 		A807C64D298A12A5003AD93D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A807C64F298A12A5003AD93D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A807C658298A174A003AD93D /* LiveActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityView.swift; sourceTree = "<group>"; };
+		A81A341D298CD8A900D36B64 /* GameAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAttributes.swift; sourceTree = "<group>"; };
 		ED67D61E2917E3510097D139 /* BasketballSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED67D6212917E3510097D139 /* BasketballSimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballSimApp.swift; sourceTree = "<group>"; };
 		ED67D6252917E3520097D139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,6 +178,7 @@
 				ED67D63B2917E4210097D139 /* GameSimulator.swift */,
 				ED67D6392917E4110097D139 /* GameState.swift */,
 				ED67D6372917E3FF0097D139 /* Team.swift */,
+				A81A341D298CD8A900D36B64 /* GameAttributes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +287,7 @@
 			files = (
 				A807C64C298A12A0003AD93D /* GameWidget.swift in Sources */,
 				A807C657298A1653003AD93D /* GameState.swift in Sources */,
+				A81A341F298CD8A900D36B64 /* GameAttributes.swift in Sources */,
 				A807C659298A174A003AD93D /* LiveActivityView.swift in Sources */,
 				A807C64A298A12A0003AD93D /* GameLiveActivity.swift in Sources */,
 				A807C648298A12A0003AD93D /* GameWidgetBundle.swift in Sources */,
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81A341E298CD8A900D36B64 /* GameAttributes.swift in Sources */,
 				ED67D6302917E37C0097D139 /* GameView.swift in Sources */,
 				ED67D6362917E3E40097D139 /* Image+Ext.swift in Sources */,
 				ED67D6322917E39D0097D139 /* ButtonStyles.swift in Sources */,
@@ -324,7 +330,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = WV8G99LA38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GameWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GameWidget;
@@ -352,7 +358,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = WV8G99LA38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GameWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = GameWidget;
@@ -496,9 +502,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BasketballSim/Preview Content\"";
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = WV8G99LA38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -528,9 +535,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BasketballSim/Preview Content\"";
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = WV8G99LA38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

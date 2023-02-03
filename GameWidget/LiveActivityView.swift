@@ -9,6 +9,8 @@ import SwiftUI
 import WidgetKit
 
 struct LiveActivityView: View {
+    let context: ActivityViewContext<GameAttributes>
+    
     var body: some View {
         ZStack {
             Image("activity-background")
@@ -20,33 +22,27 @@ struct LiveActivityView: View {
                 }
             VStack(spacing: 12) {
                 HStack {
-                    Image("warriors")
+                    Image(context.attributes.homeTeam)
                         .teamLogoModifier(frame: 44)
-                    Text("125")
+                    Text("\(context.state.gameState.homeScore)")
                         .font(.system(size: 40, weight: .semibold))
                         .foregroundColor(.white.opacity(0.9))
                     Spacer()
-                    Text("115")
+                    Text("\(context.state.gameState.awayScore)")
                         .font(.system(size: 40, weight: .semibold))
                         .foregroundColor(.black.opacity(0.75))
-                    Image("bulls")
+                    Image(context.attributes.awayTeam)
                         .teamLogoModifier(frame: 44)
                 }
                 HStack {
-                    Image("bulls")
+                    Image(context.state.gameState.scoringTeamName)
                         .teamLogoModifier(frame: 20)
-                    Text("S. Currry drains a 3")
+                    Text(context.state.gameState.lastAction)
                         .font(.callout)
                         .foregroundColor(.white.opacity(0.9))
                 }
             }
             .padding()
         }
-    }
-}
-
-struct LiveActivityView_Previews: PreviewProvider {
-    static var previews: some View {
-        LiveActivityView()
     }
 }
